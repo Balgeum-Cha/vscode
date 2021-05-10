@@ -30,13 +30,25 @@ print(p1.name, p1.age)
 # %%
 # %%
 class Person:
-    def __init__(self,name,age):
+    def __init__(self,n,a):
         print(self,'is generated')
-        self.name = name
-        self.age = age
+        self.name = n
+        self.age = a
 p1 = Person('Bob',30)
 p2 = Person('Kate',20)
 
 print(p1.name,p1.age)
 print(p2.name, p2.age)
+# %%
+
+# %%
+class Person:
+    def __init__(self,name,age = 10):
+        self.name = name
+        self.age = age
+p2 = Person('Bob', 20)
+p3 = Person('Aaron')
+
+print(p2.name, p2.age)
+print(p3.name, p3.age)
 # %%
