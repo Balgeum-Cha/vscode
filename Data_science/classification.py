@@ -53,3 +53,18 @@ ax.w_zaxis.set_ticklabels([])
 
 plt.show()
 # %%
+from sklearn.model_selection import train_test_split
+x_train, x_valid, y_train, y_valid  = train_test_split(df_iris.drop('target',1),df_iris['target'])
+# %%
+x_train.shape, y_train.shape
+# %%
+x_valid.shape, y_valid.shape
+# %%
+sns.countplot(y_train)
+# %%
+# stratify : 훈련/ 테스트 데이터들이 원래의 input dataset의 클래스의 비율과 같은 비율을 가지도록 할 것인지 지정한다.  
+x_train, x_valid, y_train, y_valid  = train_test_split(df_iris.drop('target',1),df_iris['target'],stratify=df_iris['target'])
+# %%
+sns.countplot(y_train)
+# %%
+# %%
