@@ -68,3 +68,4 @@ x_train, x_valid, y_train, y_valid  = train_test_split(df_iris.drop('target',1),
 sns.countplot(y_train)
 # %%
 # %%
+# 내일은 공부하기!
