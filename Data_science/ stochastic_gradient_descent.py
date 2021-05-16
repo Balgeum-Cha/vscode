@@ -1,6 +1,7 @@
 #%%
 # stochastic gradient descent = 확률적 경사하강법
 from IPython.display import Image
+from scipy.sparse.construct import rand
 from sklearn.linear_model import SGDClassifier
 from sklearn.datasets import load_iris
 import pandas as pd
@@ -24,3 +25,13 @@ prediction = sgd.predict(x_valid)
 (prediction == y_valid).mean()
 # %%
 # %%
+# 하이퍼 파라미터 튜닝
+# random_state : 하이퍼 파라미터 튜닝시 고정할것
+# n_jobs = -1 CPU를 모두 사용(학습 속도가 빠름)
+
+sgd = SGDClassifier(penalty='elasticnet', random_state= 0, n_jobs=-1)
+sgd.fit(x_train,y_train)
+prediction = sgd.predict(x_valid)
+(prediction == y_valid).mean()
+# %%
+# 내일 열공!
