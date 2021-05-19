@@ -34,4 +34,4 @@ sgd.fit(x_train,y_train)
 prediction = sgd.predict(x_valid)
 (prediction == y_valid).mean()
 # %%
-# 주피터로 코딩 공부
+# 내일은 회귀분석하기
