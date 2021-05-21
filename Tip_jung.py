@@ -19,3 +19,8 @@ jkhl, 쓰고 y p"""
 
 """: w 저장, 
 : wq 저장 후 종료"""
+
+
+"""ssh jung
+
+종료 ctrl + d, exit"""
