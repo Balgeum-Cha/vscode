@@ -34,4 +34,6 @@ scaled.mean(), scaled.std()
 # %%
 round(scaled.mean(),2), scaled.std()
 
+# %%i
+"""5/26"""a
 # %%

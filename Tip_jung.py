@@ -18,6 +18,7 @@ jkhl, 쓰고 y p"""
 """: w 저장, 
 : wq 저장 후 종료"""
 
-"""ssh jung
+"""정훈 컴퓨터에서 돌리는 방법
+ssh jung
 
 종료 ctrl + d, exit"""
