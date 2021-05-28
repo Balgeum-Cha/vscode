@@ -22,3 +22,5 @@ prediction = model.predict([[10]])
 # %%
 prediction
 # %%
+# %%
+# 이걸로 연습하기
